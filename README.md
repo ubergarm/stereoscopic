@@ -60,6 +60,28 @@ these cameras. For a higher budget version, I would opt for a DSLR camera
 fully supported by `gphoto2` and a manual remote switch so no need to fuss
 around with used equipment and potential firmware compatibility issues.
 
+#### Full Spectrum
+It may be possible to extend into UV and IR ranges by:
+1. Remove camera Hot Filter and use neutral Full Spectrum glass
+2. Purchase some filters
+
+Or for such a cheap camera it may be possible to:
+1. Use a dark room with long exposures
+2. Expose to UV or IR light sources
+
+* [395nm UV LED Flashlight](https://www.amazon.com/Escolite-Flashlight-Ultraviolet-Blacklight-Detector/dp/B008133KB4) ~$10
+* [850nm IR LED Array](https://www.amazon.com/Power-Array-Illuminator-Vision-Camera/dp/B01D73XM24) ~$10
+* [365nm 7W 25LED Bulb](https://www.amazon.com/Lixada-AC100V-240V-Ultraviolet-Sterilization-Fluorescent/dp/B06XKS9KRK)
+* [850nm](https://www.amazon.com/Univivi-Infrared-Illuminator-Waterproof-Security/dp/B01G6K407Q)
+
+####Filters
+* [Clip Thingy](https://www.amazon.com/Cellphone-AFUNTA-Universal-Gooseneck-Blackberry/dp/B00KZH3K2S)
+* [Square Filter Adapter](https://www.amazon.com/Neewer-Aluminum-Adapter-Singh-Ray-Filters/dp/B01N76EIHP)
+* [72mm 850nm IR Pass](https://www.amazon.com/NEEWER®-72mm-850nm-Infrared-Filter/dp/B003TXZF8M)
+
+#### Lighting
+* [Dimmer](https://www.amazon.com/dp/B0000BYEF6)
+
 ## Documentation
 * [CHDK A3300 IS Firmware](http://chdk.wikia.com/wiki/A3300IS)
 * [Canon Powershot A3300 IS Manual](http://gdlp01.c-wss.com/gds/9/0300004679/01/PSA3300IS_A3200IS_A2200_CUG_EN.pdf)
@@ -70,4 +92,5 @@ around with used equipment and potential firmware compatibility issues.
 * [pi-scan](https://github.com/Tenrec-Builders/pi-scan)
 * [www.diybookscanner.org](https://www.diybookscanner.org/)
 * [gphoto2](http://gphoto.org/proj/libgphoto2/support.php)
+* [Full Spectum Photography](https://en.wikipedia.org/wiki/Full-spectrum_photography)
 * [Nimslo](https://en.wikipedia.org/wiki/Nimslo)
