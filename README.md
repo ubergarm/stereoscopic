@@ -111,6 +111,8 @@ To install CHDK on the Canon Powershot A3300 IS camera
 ls b-*.JPG | cat -n | while read n f; do mv $f $(printf "b-%04d.jpg" "$n"); done
 # auto convert them
 convert -loop 0 -delay 15 -auto-orient -auto-level -resize "360x480>" ../mix/a-IMG_0008.JPG ../mix/b-IMG_0319.JPG output.gif
+# animate a sub section of original
+convert -loop 0 -delay 15 -auto-orient -auto-level -crop 1280x1280+800+1000 +repage -resize "640x640>" left-0040.jpg right-0040.jpg test.gif
 ```
 
 ## Results
