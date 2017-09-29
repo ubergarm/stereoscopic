@@ -161,6 +161,7 @@ The `stereoscopic` part of this project has been demonstrated as shown above. A 
 ## References
 * [CHDK](http://chdk.wikia.com)
 * [gphoto2](http://gphoto.org/proj/libgphoto2/support.php)
+* [imagemagick](https://www.imagemagick.org/script/command-line-options.php)
 * [$400-96MP-array](http://www.tawbaware.com/vsa_camera_array.html)
 * [pi-scan](https://github.com/Tenrec-Builders/pi-scan)
 * [www.diybookscanner.org](https://www.diybookscanner.org/)
