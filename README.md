@@ -6,19 +6,22 @@ stereoscopic
 > same object taken at slightly different angles are viewed together,
 > creating an impression of depth and solidity.
 
+## Example
+![mini-love-statue.gif](https://ubergarm.com/gifs/ucd/mini-love-statue.gif "Robert Indiana's small LOVE statue on PENN campus")
+
 ## Goal
 The `stereoscopic` project combines low-cost high-quality commercially
 available hardware and open source software enabling a point-and-shoot
 digital stereoscopic camera experience.
 
-This rig could also be used for scanning books with some mounting
-modifications.
-
 Think digital Nimslo 3D to animated gif!
 
+Additionally, this rig could also be used for scanning books with some mounting modifications.
+
+Finally, UV and IR light sources and possible camera hot mirror modifications could allow for capturing full spectrum photos.
+
 ## Status
-The `stereoscopic` project is currently in the ideation and requirements
-gathering stage.
+The `stereoscopic` project has currently been prototyped and initial results demonstrated.
 
 ## Requirements
 Category | Requirement | Bonus
@@ -29,7 +32,7 @@ Category | Requirement | Bonus
 *Size* | 10MP per sensor | 16 MP per sensor
 *Format* | JPG | RAW (e.g. DNG)
 *Capture* | Synchronised external capture trigger dongle | WiFi trigger
-*Wavelengths* | Standard RGB | Near InfraRed capability
+*Wavelengths* | Standard RGB | UV and IR full spectrum
 *Processing* | Offline via scripts | Uploads finished images via WiFi
 
 ## Hardware
@@ -48,9 +51,6 @@ Qty | Component | Description | Price ea | Total
 1 | Misc Hardware | ??? | ??? | ???
 1 | Lighting | ??? | ??? | ???
 -- | -- | -- | TOTAL | <=~$175
-
-## Software
-TODO
 
 ## Discussion
 #### Sensors
@@ -74,17 +74,15 @@ Or for such a cheap camera it may be possible to:
 * [365nm 7W 25LED Bulb](https://www.amazon.com/Lixada-AC100V-240V-Ultraviolet-Sterilization-Fluorescent/dp/B06XKS9KRK)
 * [850nm](https://www.amazon.com/Univivi-Infrared-Illuminator-Waterproof-Security/dp/B01G6K407Q)
 
-####Filters
+#### Filters
+Still ideating and need to experiment here.
+
 * [Clip Thingy](https://www.amazon.com/Cellphone-AFUNTA-Universal-Gooseneck-Blackberry/dp/B00KZH3K2S)
 * [Square Filter Adapter](https://www.amazon.com/Neewer-Aluminum-Adapter-Singh-Ray-Filters/dp/B01N76EIHP)
 * [72mm 850nm IR Pass](https://www.amazon.com/NEEWER®-72mm-850nm-Infrared-Filter/dp/B003TXZF8M)
 
 #### Lighting
 * [Dimmer](https://www.amazon.com/dp/B0000BYEF6)
-
-## Documentation
-* [CHDK A3300 IS Firmware](http://chdk.wikia.com/wiki/A3300IS)
-* [Canon Powershot A3300 IS Manual](http://gdlp01.c-wss.com/gds/9/0300004679/01/PSA3300IS_A3200IS_A2200_CUG_EN.pdf)
 
 ## Configure Cameras
 To install CHDK on the Canon Powershot A3300 IS camera
@@ -111,7 +109,7 @@ A few useful bash one liners which can be used to script processing.
 # raname left and right camera files
 ls b-*.JPG | cat -n | while read n f; do mv $f $(printf "b-%04d.jpg" "$n"); done
 # auto convert them
-convert -loop 0 -delay 15 -auto-orient -auto-level -resize "360x480>" ../mix/a-IMG_0008.JPG ../mix/b-IMG_0319.JPG output.gif
+convert -loop 0 -delay 15 -auto-orient -auto-level -resize "360x480>" ../mix/left-0001.jpg ../mix/right-0001.jpg output.gif
 # animate a sub section of original
 convert -loop 0 -delay 15 -auto-orient -auto-level -crop 1280x1280+800+1000 +repage -resize "640x640>" left-0040.jpg right-0040.jpg test.gif
 ```
@@ -124,8 +122,10 @@ A mix of results both cropped and full frame all shot using this rig.
 ![penn-truck-guy.gif](https://ubergarm.com/gifs/ucd/penn-truck-guy.gif "A guy sitting in a PENN grounds truck")
 ![halal-cart.gif](https://ubergarm.com/gifs/ucd/halal-cart.gif "Two people ordering from a halal food cart")
 ![guys-on-bench.gif](https://ubergarm.com/gifs/ucd/guys-on-bench.gif "Three guys sitting on benches in Clark Park")
-![mini-love-statue.gif](https://ubergarm.com/gifs/ucd/mini-love-statue.gif "Robert Indiana's small LOVE statue on PENN campus")
 ![john-selfie.gif](https://ubergarm.com/gifs/ucd/john-selfie.gif "Me in the 1956 Trolley")
+
+## Conclusion
+The `stereoscopic` part of this project has been demonstrated as shown above. A low cost rig can be constructed and modified with CHDK for under $200.
 
 ## gphoto2 reference
 A few useful commands:
@@ -138,10 +138,16 @@ gphoto2 --get-all-files
 gphoto2 --list-config
 ```
 
-TODO: See if CHDKPTP has better support.
+## TODO
+- [ ] Address camera misalignment difficulties
+- [ ] DNG raw file camera calibrations
+- [ ] Book imaging configuration
+- [ ] UV and IR techniques for book imaging
+- [ ] CHDKPTP tethered control and automation
 
-#### RAW DNG Files
-TODO
+## Documentation
+* [CHDK A3300 IS Firmware](http://chdk.wikia.com/wiki/A3300IS)
+* [Canon Powershot A3300 IS Manual](http://gdlp01.c-wss.com/gds/9/0300004679/01/PSA3300IS_A3200IS_A2200_CUG_EN.pdf)
 
 ## References
 * [CHDK](http://chdk.wikia.com)
