@@ -86,11 +86,60 @@ Or for such a cheap camera it may be possible to:
 * [CHDK A3300 IS Firmware](http://chdk.wikia.com/wiki/A3300IS)
 * [Canon Powershot A3300 IS Manual](http://gdlp01.c-wss.com/gds/9/0300004679/01/PSA3300IS_A3200IS_A2200_CUG_EN.pdf)
 
+## Configure Cameras
+To install CHDK on the Canon Powershot A3300 IS camera
+
+#### Check original firmware version
+1. Mount SDcard in computer and create an empty file in the root i.e. `touch /mnt/SDcard/ver.req`.
+2. Insert SDcard, unplug USB cables, power on camera using `Playback` arrow button *not* the on/off switch.
+3. Push and hold `Func Set` and then simultenously `Disp` to show firmware version e.g. GM`1.00C`
+
+#### [Prepare Bootable SDcard](http://chdk.wikia.com/wiki/Prepare_your_SD_card)
+1. Download CHDK matching your model and firmware e.g. [a3300-100c-1.4.1-4918-full.zip](http://mighty-hoernsche.de/bins/a3300-100c-1.4.1-4918-full.zip)
+2. Make sure the SDcard is formatted FAT32 in unlock position and unzip the CHDK firmware and dirs into the root directory using computer.
+3. Insert SDcard, unplug USB cables, power on camera using `Playback` arrow button *not* the on/off switch.
+4. `Menu`->`Playback`->`Firmware Update...`->`OK`
+5. Now pres `Play` arrow button for like a quarter second, don't long press it, and you'll get the CHDK menu.
+6. From CHDK Menu go to `Miscellaneous stuff`->`SD Card`->`Make Card Bootable` instantly returning an `OK` message.
+7. Power off camera, remove SDcard, flip it to locked, and put it in again. CHDK ignores this and will write photos okay.
+
+#### [Remote Control](http://chdk.wikia.com/wiki/USB_Remote_V2)
+
+## Animating
+```bash
+# raname left and right camera files
+ls b-*.JPG | cat -n | while read n f; do mv $f $(printf "b-%04d.jpg" "$n"); done
+# auto convert them
+convert -loop 0 -delay 15 -auto-orient -auto-level -resize "360x480>" ../mix/a-IMG_0008.JPG ../mix/b-IMG_0319.JPG output.gif
+```
+
+## Results
+~81 image pairs taken at 16MP ea created about ~737 MB of JPG data which convereted to ~23MB of animted GIFS at 360x480.
+
+## gphoto2
+```bash
+gphoto2 --list-ports
+gphoto2 --auto-detect
+gphoto2 --summary
+gphoto2 --list-files
+gphoto2 --get-all-files
+gphoto2 --list-config
+gphoto2
+gphoto2
+gphoto2
+gphoto2
+gphoto2
+```
+
+#### RAW DNG Files
+
+
 ## References
 * [CHDK](http://chdk.wikia.com)
+* [gphoto2](http://gphoto.org/proj/libgphoto2/support.php)
 * [$400-96MP-array](http://www.tawbaware.com/vsa_camera_array.html)
 * [pi-scan](https://github.com/Tenrec-Builders/pi-scan)
 * [www.diybookscanner.org](https://www.diybookscanner.org/)
-* [gphoto2](http://gphoto.org/proj/libgphoto2/support.php)
+* [rawtherapee](http://rawtherapee.com/)
 * [Full Spectum Photography](https://en.wikipedia.org/wiki/Full-spectrum_photography)
 * [Nimslo](https://en.wikipedia.org/wiki/Nimslo)
