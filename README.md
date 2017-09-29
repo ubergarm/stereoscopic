@@ -149,7 +149,7 @@ The `stereoscopic` part of this project has been demonstrated as shown above. A 
 
 ## TODO
 - [ ] Address camera misalignment difficulties
-- [ ] DNG raw file camera calibrations
+- [ ] DNG raw file camera calibrations (LCP & DCP profiles)
 - [ ] Book imaging configuration
 - [ ] UV and IR techniques for book imaging
 - [ ] CHDKPTP tethered control and automation
