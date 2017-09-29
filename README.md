@@ -9,6 +9,8 @@ stereoscopic
 ## Example
 ![mini-love-statue.gif](https://ubergarm.com/gifs/ucd/mini-love-statue.gif "Robert Indiana's small LOVE statue on PENN campus")
 
+[Skip to Gallery](https://github.com/ubergarm/stereoscopic#results)
+
 ## Goal
 The `stereoscopic` project combines low-cost high-quality commercially
 available hardware and open source software enabling a point-and-shoot
@@ -103,6 +105,17 @@ To install CHDK on the Canon Powershot A3300 IS camera
 
 #### [Remote Control](http://chdk.wikia.com/wiki/USB_Remote_V2)
 
+## gphoto2
+Reference of few useful commands:
+```bash
+gphoto2 --list-ports
+gphoto2 --auto-detect
+gphoto2 --summary
+gphoto2 --list-config
+gphoto2 --list-files
+gphoto2 --get-all-files
+```
+
 ## Animating
 A few useful bash one liners which can be used to script processing.
 ```bash
@@ -119,24 +132,20 @@ convert -loop 0 -delay 15 -auto-orient -auto-level -crop 1280x1280+800+1000 +rep
 
 A mix of results both cropped and full frame all shot using this rig.
 
-![penn-truck-guy.gif](https://ubergarm.com/gifs/ucd/penn-truck-guy.gif "A guy sitting in a PENN grounds truck")
 ![halal-cart.gif](https://ubergarm.com/gifs/ucd/halal-cart.gif "Two people ordering from a halal food cart")
-![guys-on-bench.gif](https://ubergarm.com/gifs/ucd/guys-on-bench.gif "Three guys sitting on benches in Clark Park")
+![penn-truck-guy.gif](https://ubergarm.com/gifs/ucd/penn-truck-guy.gif "A guy sitting in a Penn grounds truck")
+![tools.gif](https://ubergarm.com/gifs/ucd/tools.gif "Cleaning off some tools")
+![penn-benjamin.gif](https://ubergarm.com/gifs/ucd/penn-benjamin.gif "Benjamin Franklin on Penn campus")
 ![john-selfie.gif](https://ubergarm.com/gifs/ucd/john-selfie.gif "Me in the 1956 Trolley")
+![bikes.gif](https://ubergarm.com/gifs/ucd/bikes.gif "Some colorful bike racks on Penn campus")
+![book-drop.gif](https://ubergarm.com/gifs/ucd/book-drop.gif "Penn Fine Arts Library book drop")
+![penn-bricks.gif](https://ubergarm.com/gifs/ucd/penn-bricks.gif "Penn red bricks and staircase")
+
+## Rig
+![rig-selfie.jpg](https://ubergarm.com/gifs/ucd/rig-selfie.jpg "A glimps of the rig itself")
 
 ## Conclusion
-The `stereoscopic` part of this project has been demonstrated as shown above. A low cost rig can be constructed and modified with CHDK for under $200.
-
-## gphoto2 reference
-A few useful commands:
-```bash
-gphoto2 --list-ports
-gphoto2 --auto-detect
-gphoto2 --summary
-gphoto2 --list-files
-gphoto2 --get-all-files
-gphoto2 --list-config
-```
+The `stereoscopic` part of this project has been demonstrated as shown above. A low cost rig can be constructed and modified with CHDK for under $175.
 
 ## TODO
 - [ ] Address camera misalignment difficulties
