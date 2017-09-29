@@ -106,6 +106,7 @@ To install CHDK on the Canon Powershot A3300 IS camera
 #### [Remote Control](http://chdk.wikia.com/wiki/USB_Remote_V2)
 
 ## Animating
+A few useful bash one liners which can be used to script processing.
 ```bash
 # raname left and right camera files
 ls b-*.JPG | cat -n | while read n f; do mv $f $(printf "b-%04d.jpg" "$n"); done
@@ -118,7 +119,16 @@ convert -loop 0 -delay 15 -auto-orient -auto-level -crop 1280x1280+800+1000 +rep
 ## Results
 ~81 image pairs taken at 16MP ea created about ~737 MB of JPG data which convereted to ~23MB of animted GIFS at 360x480.
 
-## gphoto2
+A mix of results both cropped and full frame all shot using this rig.
+
+![penn-truck-guy.gif](https://ubergarm.com/gifs/ucd/penn-truck-guy.gif "A guy sitting in a PENN grounds truck")
+![halal-cart.gif](https://ubergarm.com/gifs/ucd/halal-cart.gif "Two people ordering from a halal food cart")
+![guys-on-bench.gif](https://ubergarm.com/gifs/ucd/guys-on-bench.gif "Three guys sitting on benches in Clark Park")
+![mini-love-statue.gif](https://ubergarm.com/gifs/ucd/mini-love-statue.gif "Robert Indiana's small LOVE statue on PENN campus")
+![john-selfie.gif](https://ubergarm.com/gifs/ucd/john-selfie.gif "Me in the 1956 Trolley")
+
+## gphoto2 reference
+A few useful commands:
 ```bash
 gphoto2 --list-ports
 gphoto2 --auto-detect
@@ -126,15 +136,12 @@ gphoto2 --summary
 gphoto2 --list-files
 gphoto2 --get-all-files
 gphoto2 --list-config
-gphoto2
-gphoto2
-gphoto2
-gphoto2
-gphoto2
 ```
 
-#### RAW DNG Files
+TODO: See if CHDKPTP has better support.
 
+#### RAW DNG Files
+TODO
 
 ## References
 * [CHDK](http://chdk.wikia.com)
