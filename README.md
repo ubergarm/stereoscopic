@@ -7,7 +7,7 @@ stereoscopic
 > creating an impression of depth and solidity.
 
 ## Example
-![mini-love-statue.gif](https://ubergarm.com/gifs/ucd/mini-love-statue.gif "Robert Indiana's small LOVE statue on PENN campus")
+![mini-love-statue.gif](https://ubergarm.com/images/gifs/mini-love-statue.gif "Robert Indiana's small LOVE statue on PENN campus")
 
 [Skip to Gallery](https://github.com/ubergarm/stereoscopic#results)
 
@@ -132,17 +132,17 @@ convert -loop 0 -delay 15 -auto-orient -auto-level -crop 1280x1280+800+1000 +rep
 
 A mix of results both cropped and full frame all shot using this rig.
 
-![halal-cart.gif](https://ubergarm.com/gifs/ucd/halal-cart.gif "Two people ordering from a halal food cart")
-![penn-truck-guy.gif](https://ubergarm.com/gifs/ucd/penn-truck-guy.gif "A guy sitting in a Penn grounds truck")
-![tools.gif](https://ubergarm.com/gifs/ucd/tools.gif "Cleaning off some tools")
-![penn-benjamin.gif](https://ubergarm.com/gifs/ucd/penn-benjamin.gif "Benjamin Franklin on Penn campus")
-![john-selfie.gif](https://ubergarm.com/gifs/ucd/john-selfie.gif "Me in the 1956 Trolley")
-![bikes.gif](https://ubergarm.com/gifs/ucd/bikes.gif "Some colorful bike racks on Penn campus")
-![book-drop.gif](https://ubergarm.com/gifs/ucd/book-drop.gif "Penn Fine Arts Library book drop")
-![penn-bricks.gif](https://ubergarm.com/gifs/ucd/penn-bricks.gif "Penn red bricks and staircase")
+![halal-cart.gif](https://ubergarm.com/images/gifs/halal-cart.gif "Two people ordering from a halal food cart")
+![penn-truck-guy.gif](https://ubergarm.com/images/gifs/penn-truck-guy.gif "A guy sitting in a Penn grounds truck")
+![tools.gif](https://ubergarm.com/images/gifs/tools.gif "Cleaning off some tools")
+![penn-benjamin.gif](https://ubergarm.com/images/gifs/penn-benjamin.gif "Benjamin Franklin on Penn campus")
+![john-selfie.gif](https://ubergarm.com/images/gifs/john-selfie.gif "Me in the 1956 Trolley")
+![bikes.gif](https://ubergarm.com/images/gifs/bikes.gif "Some colorful bike racks on Penn campus")
+![book-drop.gif](https://ubergarm.com/images/gifs/book-drop.gif "Penn Fine Arts Library book drop")
+![penn-bricks.gif](https://ubergarm.com/images/gifs/penn-bricks.gif "Penn red bricks and staircase")
 
 ## Rig
-![rig-selfie.jpg](https://ubergarm.com/gifs/ucd/rig-selfie.jpg "A glimps of the rig itself")
+![rig-selfie.jpg](https://ubergarm.com/images/gifs/rig-selfie.jpg "A glimps of the rig itself")
 
 ## Conclusion
 The `stereoscopic` part of this project has been demonstrated as shown above. A low cost rig can be constructed and modified with CHDK for under $175.
